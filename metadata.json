@@ -1,0 +1,6 @@
+{
+  "name": "AURA NOIR — Haute Parfumerie",
+  "description": "Премиальный бутик селективной и нишевой парфюмерии: пирамида ароматов, онлайн-сомелье, конструктор Discovery Set и панель управления.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
