@@ -1,5 +1,5 @@
-import React from 'react';
 import { ShoppingBag, Sparkles, Shield, Search } from 'lucide-react';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface HeaderProps {
   cartCount: number;
@@ -71,7 +71,9 @@ export const Header: React.FC<HeaderProps> = ({
         </nav>
 
         {/* Zone 3: Primary action & controls */}
-        <div className="flex items-center gap-3 shrink-0">
+        <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
+          <PWAInstallButton variant="header" />
+
           <button
             onClick={onSearchClick}
             aria-label="Поиск ароматов"

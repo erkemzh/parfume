@@ -13,6 +13,8 @@ import { CartDrawer } from './components/CartDrawer';
 import { CheckoutModal } from './components/CheckoutModal';
 import { AdminDashboard } from './components/AdminDashboard';
 import { FlowerMatcherModal } from './components/FlowerMatcherModal';
+import { PWAInstallButton } from './components/PWAInstallButton';
+import { OfflineIndicator } from './components/OfflineIndicator';
 import { CraftsmanshipSection } from './components/CraftsmanshipSection';
 import { Footer } from './components/Footer';
 import { Sparkles, Check } from 'lucide-react';
@@ -484,6 +486,13 @@ export default function App() {
         {/* Philosophy & Craftsmanship Section */}
         <CraftsmanshipSection />
 
+        {/* PWA Mobile App Callout Banner */}
+        <section className="py-12 bg-white border-t border-purple-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <PWAInstallButton variant="banner" />
+          </div>
+        </section>
+
       </main>
 
       {/* Footer */}
@@ -576,6 +585,9 @@ export default function App() {
           <span className="font-semibold">{toastMessage}</span>
         </div>
       )}
+
+      {/* Offline Connectivity Notification */}
+      <OfflineIndicator />
 
     </div>
   );

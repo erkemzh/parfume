@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Sparkles } from 'lucide-react';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface FooterProps {
   onOpenAdmin: () => void;
@@ -67,6 +68,9 @@ export const Footer: React.FC<FooterProps> = ({
                 <button onClick={onOpenDiscoveryBuilder} className="hover:text-purple-700 transition-colors cursor-pointer text-left">
                   Конструктор Discovery Set (-20%)
                 </button>
+              </li>
+              <li>
+                <PWAInstallButton variant="footer" />
               </li>
               <li><span className="text-[#7A7485]">Подарочные пастельные шкатулки</span></li>
               <li><span className="text-[#7A7485]">Бесплатные сэмплы при заказе</span></li>
